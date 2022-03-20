@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Оставленные заявки </h1>
+    <a href="/forms.html"> Назад к форме </a>
+    <section>  
+        <% let count = 0%>
+        <% data.forEach(function(obj) { %>
+            User number <%=  count %>
+            <ul>
+                <% keys(obj).forEach(function(field) { %>
+                    <% if (field != '_id' && obj[field]) { %>
+                        <li><%= field %> : <%= obj[field] %></li>
+                    <% } %>
+                <% }) %>
+            </ul>
+            <% count += 1%>
+        <% }) %>
+    </section>
+</body>
+</html>

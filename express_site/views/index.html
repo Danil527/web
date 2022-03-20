@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <title>Я студент ВШЭ</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Я студент ВШЭ!</h1>
+    </header>
+    <nav>
+        <h2 id="content">Содержание</h2>
+        <ul type="square">
+            <li><a href="#sec1">Высшая Школа Экономики</a></li>
+            <li><a href="#sec2">Мой факультет</a></li>
+            <li><a href="#sec3">Немного о себе</a></li>
+            <li><a href="#sec4">Учёба</a></li>
+            <li><a href="#sec5">Спорт и хобби</a></li>
+            <li><a href="#sec6">Заключение</a></li>
+            <li><a href="#sec7">Расположение</a></li>
+            <li><a href="#footer">Обратная связь</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="sec1">
+            <h2>Высшая Школа Экономики</h2>
+            <img src="images/logo.jpg" class="university"></img>
+            <p>
+                Национальный исследовательский университет <strong>«Высшая школа экономики»</strong> — 
+                исследовательский университет, осуществляющий свою миссию через:
+            </p>
+                <ol>
+                    <li>научно-образовательную,</li>
+                    <li>проектную,</li>
+                    <li>экспертно-аналитическую,</li>
+                    <li>социокультурную,</li>
+                </ol>
+            <p>
+                деятельности на основе международных научных и организационных стандартов. 
+                <br>
+                Мы осознаем себя частью <i>мирового академического сообщества</i>, считаем международное партнерство, вовлеченность в глобальное университетское взаимодействие ключевыми элементами нашего движения вперед. 
+                Будучи российским университетом, мы работаем на благо России и ее граждан. 
+                <br>
+                Наш университет — это коллектив ученых, сотрудников, аспирантов и студентов, которых отличает внутренняя приверженность к поддержанию высоких академических стандартов своей деятельности.
+            </p>
+        </section>
+
+        <section id="sec2">
+            <h2>Мой факультет</h2>
+            <p>
+                <img src="images/miem.jpg" alt="МИЭМ ВШЭ" class="university" style="height: 300px;width: 430px;">
+                <b><abbr>МИЭМ НИУ ВШЭ</abbr></b> готовит специалистов, бакалавров и магистров в областях: 
+                <ul>
+                    <li>электроники</li>
+                    <li>информационных технологий</li>
+                    <li> телекоммуникаций</li>
+                    <li>прикладной математики</li>
+                    <li>кибернетики</li>
+                    <li>дизайна</li>
+                </ul>
+                <samp> Педагогический коллектив МИЭМ включает 1 академика РАН, 4 члена-корреспондента РАН, 34 лауреата государственных премий РФ.</samp>
+                <br>
+                Тесные связи с ведущими отраслевыми институтами, институтами РАН, мировыми компаниями, такими как 
+                <a target="_blank" href="https://www.ni.com/ru-ru.html">National Instruments</a>
+                    <a target="_blank" href="https://www.infowatch.ru/">InfoWatch</a>
+                        <a target="_blank" href="https://www.zyxel.com/ru/ru/homepage.shtml">Zyxel</a>
+                
+            </p>
+        </section>
+        
+        <section id="sec3">
+            <h2>Немного о себе</h2>
+            <aside>
+                <img id="me" src="images/danil.jpg">
+                <span id="span_name">Меня зовут Данил Клянчин!</span>
+                <br>
+                <p>Я студент 3го курса программы <strong>"Прикладная математика"</strong> <i>НИУ ВШЭ.</i></p>
+                <p>Люблю программировать (<code><var>a="hello, world!"</var> print(a)</code>), заниматься спортом и играть на гитаре!</p>
+            </aside>
+        </section>
+        
+        <section id="sec4">
+            <h2>Учёба</h2>
+            <p><samp>Кумулятивный рейтинг по итогам 3-4 модулей 2020/2021 уч.г.</samp></p>
+            <table>
+                <thead style="font-size: large; color: blue;">
+                    <tr>
+                        <td>Наименование</td>
+                        <td>Величина</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Сумма кредитов</td>
+                        <td>138</td>
+                    </tr>
+                    <tr>
+                        <td>Кредитно-рейтинговая сумма</td>
+                        <td>1164</td>
+                    </tr>
+                    <tr>
+                        <td>Коэф. нормирования</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Нормированная Кредитно-рейтинговая сумма</td>
+                        <td>1164</td>
+                    </tr>
+                    <tr>
+                        <td>Минимальная оценка</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Средняя оценка</td>
+                        <td>8.48</td>
+                    </tr>
+                    <tr>
+                        <td>Перцентиль</td>
+                        <td>13.25</td>
+                    </tr>
+                    <tr>
+                        <td>GPA</td>
+                        <td>8.43</td>
+                    </tr>
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </section>
+        
+        <section id="sec5">
+            <h2>Спорт и хобби</h2>
+            <ul>
+                <li>Занимаюсь лыжами. Выступаю за сборную ВШЭ на межвузовских соревнованиях.</li>
+                <li>Регулярно бегаю на стадионе. Готовлюсь к московскому марафону 2022!</li>
+                <li>Выступаю за сборную ВШЭ по академической гребле.</li>
+                <li>В свободное от учебы и спорта время люблю играть на гитаре.</li>
+            </ul>
+            <figure>
+                <img src="images/photo1.jpg" class="photo">
+                <img src="images/photo3.jpg" class="photo">
+                <img src="images/photo2.jpg" class="photo">
+                <figcaption ></figcaption>
+            </figure>
+        </section>
+
+        <section id="sec6">
+            <h2>Заключение</h2>
+            <p>
+                Спасибо за прочтение данной статьи! Закончить я хочу прекрасными словами 
+                бывшего ректора <strong> НИУ ВШЭ </strong>, <u>Кузьминова Ярослава Ивановича</u>:
+            </p>
+            <blockquote cite="https://iocs.hse.ru/news/373733644.html" style="font-style: italic;">
+                Такие вещи, как системное мышление, рассмотрение альтернатив, других точек зрения, критическое восприятие мира, — это то, что должен давать университет. 
+                Мне кажется, это будет обороной человечества при наступлении искусственного интеллекта. 
+                Мы часто говорим про искусственный интеллект — что это нечто цифровое, что‑то типа электронного мозга, который за нас решает. 
+                Все это чепуха. 
+                Решать будут люди — так же, как это происходит сейчас.
+            </blockquote> 
+        </section>
+        <section id="sec7">
+            <div id="mapid"></div>
+        </section>
+    </main>
+    <button id="chat">Чат</button>
+    <footer id="footer">
+        <h2>Обратная связь</h2>
+        <p>
+            <a href="https://vk.com/the_best_runner" target="_blank" id="myVk">ВКонтакте</a>
+            |
+            <a href="https://t.me/danil_kln" target="_blank" id="myTg">Телеграм</a>
+        <br>
+        Для связи пройдите по ссылке: <a href="forms.html">Форма обратной связи</a></p>
+        <address>
+            <p>
+                Сделал студент НИУ ВШЭ Департамента Прикладной Математики, Клянчин Данил.
+                <br>
+                <time datetime="2022-02-25">25 февраля 2022 г.</time>
+            </p>
+        </address>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 50px;
+    background-color: #c0c0f5;
+}
+
+section {
+    position: absolute;
+    display: flexbox;
+    flex-direction: row;
+    background-color: white;
+    height: max-content;
+    width: 50%;
+    top: 10%;
+    left: 25%;
+    border-radius: 20px;
+}
+
+h1 {
+    color: blue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+p {
+    margin: 4px;
+    padding: 5px;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-items:flex-start;
+    align-items:flex-end;
+    align-items:center;
+    justify-content: space-around;
+}
+
+video {
+    width: 50%;
+    position: fixed; 
+    top: 5%; 
+    right: 0;
+    z-index: -5;
+    display: none;
+}
+
+div > input {
+    height: 30;
+    flex: 1;
+    padding: 5px;
+    margin: 4px;
+}
+
+span {
+    margin: 4px;
+    padding: 5px;
+}
+
+textarea {
+    flex: 1;
+    margin: 4px;
+    height: 50px;
+}
+
+label { 
+    padding-left: 4px;
+    margin: 4px;
+}
+
+#reset {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#button {
+    border-radius: 10px;
+    border-color: #c0c0f5;
+    background-color: #c0c0f5;
+    font-size: large;
+}
+
+#reset:hover {
+    border-style: solid;
+    border-color: blue;
+    background-color: blue;
+    color: white;
+}
+
+#button:hover {
+    border-style: solid;
+    border-color: blue;
+    background-color: blue;
+    color: white;
+}

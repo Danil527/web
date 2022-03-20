@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/forms.css">
+    <title>Обратная связь</title>
+</head>
+<body>
+    <section>
+        <h1>Связаться со мной</h1>
+        <form action="/result" method="post" type="application/json" id="form">
+            <div>
+                <input type="text" id="name" placeholder="Ваше имя" name="name" required>
+                <input type="email" id="email" placeholder="Ваш email" name="email" required>
+                <input type="tel" id="phone" placeholder="Ваш телефон" name="phone">                
+            </div>
+
+            <div>
+                <input type="url" id="url" placeholder="url для связи" name="url">
+            </div>
+
+            <div>
+                <textarea id="text" rows="2" cols="15" placeholder="Ваше сообщение:" name="msg" required></textarea>
+            </div>
+             
+            <div>
+                <input type="file" id="file" placeholder="Выберите файл" name="file">
+            </div>
+
+            <div>
+                <label for="text"> Тип обращения:</label>
+                <label for="study"> Учёба </label>
+                <input type="checkbox" id="checkbox" name="study_flag">
+                <label for="work"> Работа </label>
+                <input type="checkbox" id="checkbox" name="work_flag">
+                <label for="other"> Другое </label>
+                <input type="checkbox" id="checkbox" name="other_flag">
+            </div>
+
+            <div>
+                <label for="text">Срочность ответа:</label><br>
+                <input type="date" id="date" name="date_to_finish">
+                <input type="time" id="time" name="time_to_finish">
+            </div>
+            
+            <div>
+                <input type="reset" id="reset" min='1' max="10" step="1" name="reset_flag">
+            </div>
+
+            <div id="bot_check">
+                <label for="checkbot"> Проверка на бота: <code>5 + ln(e) = </code></label>
+                <span>
+                    <label for="op1" id="opt"> 5</label>
+                    <input type="radio" name="group1" id="opt1">
+                </span>
+                <span>
+                    <label for="op2" id="opt">  6</label>
+                    <input type="radio" name="group1" id="opt2">
+                </span>
+                <span>
+                    <label for="op3" id="opt">  7</label>
+                    <input type="radio" name="group1" id="opt3"> 
+                </span>
+            </div>
+
+            <div>
+                <input id="button" type="submit" value="Связаться!">
+            </div> 
+
+        </form>
+        <p><a href="/">Cтартовая страница</a></p>
+    </section>
+    <script src="js/forms.js"></script>
+</body>
+</html>
