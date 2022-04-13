@@ -68,8 +68,33 @@
             <div>
                 <input id="button" type="submit" value="Связаться!">
             </div> 
+            
+            <select name="select" id="sel" style="background-color: red;">
+                <option>Опция 1</option>
+                <option>Опция 2</option>
+                <option>Опция 3</option>
+                <option>Опция 4</option>
+            </select>
+
+            <select name="select" id="sel" style="background-color: red;">
+                <optgroup>
+                    <option>Опция 1</option>
+                    <option>Опция 2</option>
+                </optgroup>
+                <optgroup>
+                    <legend>Легенда 2</legend>
+                    <option>Опция 3</option>
+                    <option>Опция 4</option>
+                </optgroup>
+            </select>
 
         </form>
+        <form oninput="result.value=(cm.value/2.54).toFixed(2)">
+            <p>Введите длину в сантиметрах: 
+            <input type="number" name="cm" autofocus></p>
+            <p>Длина в дюймах: <output name="result">0</output></p>
+        </form>
+
         <p><a href="/">Cтартовая страница</a></p>
     </section>
     <script src="js/forms.js"></script>

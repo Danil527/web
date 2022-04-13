@@ -31,16 +31,33 @@ app.post('/result', function (req, res) {
     dbo.collection('messages').insertOne(req.body, (err, res) => {
       if (err) throw err
     })
-    
-    dbo.collection("messages").find({}).toArray().then((data) => {
+    dbo.collection("messages").find({}).toArray().then(data => {
       res.render('messages.ejs', {'data': data, 'keys': Object.keys})
-    })    
+      db.close()
+    })
+
   })
 });
 
 
-app.listen(port, ()=>{
+app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
 
 
+MongoClient.connect(url, (err, db) => {
+  if (err) throw err
+
+  const dbo = db.db('mydb')
+
+  dbo.collection('messages').deleteOne({'name': 'Nikita'}, (err, res) => {
+    if (err) throw err
+    console.log('Res: ', res)
+    db.close()
+  })
+})
+
+
+const chalk = require('chalk')
+
+console.log(chalk.yellow('hello'))
